@@ -1,11 +1,13 @@
 #include <iostream>
+
 #include <vector>
 #include <complex>
+
 using namespace std;
 
-class DFT {
+class DFT
+{
 
-    public: 
-        vector <complex<double>> calculoDFT(const vector<complex<double>>&);
-    
+public:
+    vector<complex<double>> calculoDFT(const vector<complex<double>> &);
 };
