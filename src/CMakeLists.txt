@@ -1,0 +1,8 @@
+cmake_minimum_required ( VERSION 3.13)
+project ( basic_cpp_programs )
+SET ( CMAKE_SOURCE_DIR / ${CMAKE_CURRENT_SOURCE_DIR})
+SET ( CMAKE_CXX_FLAGS "-std=c++0x" )
+include_directories (${CMAKE_CURRENT_SOURCE_DIR}/lib/include)
+link_directories (${CMAKE_CURRENT_SOURCE_DIR}/lib/bin)
+add_subdirectory ( apps )
+add_subdirectory ( lib )

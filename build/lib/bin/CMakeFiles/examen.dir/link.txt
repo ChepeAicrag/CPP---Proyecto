@@ -1,0 +1,2 @@
+/usr/bin/ar qc libexamen.a CMakeFiles/examen.dir/DFT.cpp.o CMakeFiles/examen.dir/FFT.cpp.o CMakeFiles/examen.dir/Archivos.cpp.o
+/usr/bin/ranlib libexamen.a

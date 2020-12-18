@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/src/lib/bin/FFT.cpp
+FFT.hpp
+-
+iostream
+-
+vector
+-
+complex
+-
+math.h
+-
+valarray
+-
+
+/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/src/lib/include/FFT.hpp
+iostream
+-
+vector
+-
+complex
+-
+

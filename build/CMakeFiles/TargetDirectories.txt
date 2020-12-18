@@ -1,0 +1,10 @@
+/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/build/CMakeFiles/rebuild_cache.dir
+/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/build/CMakeFiles/edit_cache.dir
+/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/build/apps/CMakeFiles/rebuild_cache.dir
+/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/build/apps/CMakeFiles/edit_cache.dir
+/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/build/apps/CMakeFiles/miprograma.dir
+/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/build/lib/CMakeFiles/rebuild_cache.dir
+/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/build/lib/CMakeFiles/edit_cache.dir
+/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/build/lib/bin/CMakeFiles/rebuild_cache.dir
+/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/build/lib/bin/CMakeFiles/edit_cache.dir
+/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/build/lib/bin/CMakeFiles/examen.dir

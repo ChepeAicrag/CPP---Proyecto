@@ -1,0 +1,1 @@
+/usr/bin/c++ -std=c++0x CMakeFiles/miprograma.dir/miprograma.cpp.o -o miprograma   -L/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/src/lib/bin  -Wl,-rpath,/home/chepeaicrag/Escritorio/CPP-2020-Proyecto/src/lib/bin ../lib/bin/libexamen.a 
