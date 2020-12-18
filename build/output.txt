@@ -1,4 +1,4 @@
-Parte real 	 Parte imaginaria
+Parte real 		 Parte imaginaria
 107.416	0
 110.709	-10.3926
 124.266	-29.2038

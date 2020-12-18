@@ -8,22 +8,29 @@
 using namespace std;
 using Complex = complex<double>;
 
-// Recibe la señal y le aplica 
+// Recibe la señal y le aplica
 vector<complex<double>> FFT ::calculoFFT(const vector<complex<double>> &x)
 {
+    // Replicamos la señal
     vector<complex<double>> output2(x);
-    vector<complex<double>> output;
-    //output = fft(output2);
-    return fft(output2);
+
+    // Inicializamos un vector para almacena las frecuencias
+    vector<complex<double>> output(x.size());
+
+    // Calculamos la FFT de la respectiva señal
+    fft(output2, output, log2(x.size()));
+
+    // Retornamos el vector de frecuencua
+    return output;
 }
 
-// Retorna vector de los valores de tiempo de la señal DIT
-vector<complex<double>> FFT ::fft(vector<complex<double>> &x)
+// Calcula los valores de tiempo de la señal DIF FFT
+void FFT ::fft(vector<complex<double>> &a, vector<complex<double>> &A, int log2n)
 {
 
     /* 
 
-    Intento de calculo de frecuencia 
+    Intento de calculo de frecuencia recursivo
 
     int N = x.size();
     if(N == 1) return x;
@@ -57,7 +64,7 @@ vector<complex<double>> FFT ::fft(vector<complex<double>> &x)
     for (int s = 1; s <= log2n; ++s)
     {
         int m = 1 << s, m2 = m >> 1;
-        Complex w(1, 0), wm = exp(-J * (M_PI / m2));
+        Complex w(1, 0), wm = exp(- J * (M_PI / m2));
         for (int j = 0; j < m2; ++j)
         {
             for (int k = j; k < n; k += m)
@@ -70,12 +77,6 @@ vector<complex<double>> FFT ::fft(vector<complex<double>> &x)
             w *= wm;
         }
     }
-}
-
-// Retorna el calculo del factor de acuerdo a N y a K
-complex<double> FFT ::w_n_k(int N, int k)
-{
-    return complex<double>(cos(2 * M_PI * k / N), -sin(2 * M_PI * k / N));
 }
 
 // Retorna el inverso de bits de un determinado numero

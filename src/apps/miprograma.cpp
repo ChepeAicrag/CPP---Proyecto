@@ -1,7 +1,9 @@
 #include <iostream>
+
 #include <Archivos.hpp>
 #include <DFT.hpp>
 #include <FFT.hpp>
+
 #include <vector>
 #include <complex>
 #include <math.h>
@@ -33,19 +35,27 @@ int main(){
         // Agregamos el elemento al vector de la señal
         signal.push_back(t);
 
-        
+        // Incremento de la variable para las muestras
         i += ts;     
-        cout << i << "-->> " << t << endl;
     }
 
-
+    // Calculo de la DFT
     vector<complex<double>> output = dft.calculoDFT(signal);
+    
+    // Almacenamiento de la DFT calculada 
     archivo.save(output, "output.txt");
+
+    // Aviso de DFT calculada
     cout << "DFT - Calculated" << endl;
-    cout << output[0] << endl;
+
+    // Calculo de la FFT
     vector<complex<double>> output2 = fft.calculoFFT(signal);
+    
+    // Almacenamiento de la FFT calculada 
     archivo.save(output2, "output2.txt");
+    
+    // Aviso de DFT calculada
     cout << "FFT - Calculated" << endl;
-    cout << output2[0] << endl;
+    
     return 0;
 }

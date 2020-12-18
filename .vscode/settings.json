@@ -4,6 +4,7 @@
         "*.md": "markdown",
         "complex": "cpp",
         "valarray": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "cmath": "cpp"
     }
 }
